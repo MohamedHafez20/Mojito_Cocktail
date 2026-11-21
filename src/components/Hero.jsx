@@ -94,7 +94,7 @@ import { useMediaQuery } from 'react-responsive'
     <div className="video absolute inset-0">
         <video
             ref={videoRef}
-            src="/videos/output.mp4"
+            src="/public/videos/output.webm"
             muted
             playsInline
             preload="auto"
