@@ -136,6 +136,26 @@ body {
         @apply w-full md:h-[80%] h-1/2 absolute bottom-0 left-0 md:object-contain object-bottom object-cover;
     }
 
+    .preloader {
+        @apply fixed inset-0 z-[100] flex flex-col items-center justify-center bg-black overflow-hidden;
+
+        .loader-brand {
+            @apply font-modern-negra text-7xl md:text-[12vw] leading-none text-gradient;
+        }
+
+        .loader-digits {
+            @apply absolute bottom-10 right-6 md:bottom-16 md:right-16 flex items-end font-sans font-light leading-none text-yellow tabular-nums;
+        }
+
+        .loader-count {
+            @apply text-6xl md:text-9xl;
+        }
+
+        .loader-pct {
+            @apply text-2xl md:text-5xl mb-1 md:mb-3 ml-1;
+        }
+    }
+
     #cocktails {
         @apply relative min-h-dvh w-full overflow-hidden;
 
